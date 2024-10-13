@@ -144,6 +144,7 @@ function loadPhotos(reviewIndex) {
             mediaElement.controls = false; 
             mediaElement.autoplay = true; 
             mediaElement.loop = true; 
+            mediaElement.muted = true;
         }
 
         mediaElement.addEventListener('mouseenter', stopAutoSwitch);
