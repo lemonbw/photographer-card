@@ -56,8 +56,8 @@ const mediaData = {
             { type: 'image', src: 'Images/Reviews/Sixth-review/family-(2).jpg', alt: '' },
             { type: 'image', src: 'Images/Reviews/Sixth-review/family-(3).jpg', alt: '' },
             { type: 'image', src: 'Images/Reviews/Sixth-review/man.jpg', alt: 'Мужик' },
-            { type: 'image', src: 'Images/Reviews/Sixth-review/man-(2).jpg', alt: 'Мужик' },
-            { type: 'image', src: 'Images/Reviews/Sixth-review/man-(3).jpg', alt: 'Мужик' },
+            { type: 'image', src: 'Images/Reviews/Sixth-review/man-(2).jpg', alt: '' },
+            { type: 'image', src: 'Images/Reviews/Sixth-review/man-(3).jpg', alt: '' },
         ]
     ]
 };

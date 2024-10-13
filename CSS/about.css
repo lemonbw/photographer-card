@@ -34,7 +34,7 @@ h2, h3 {
 #question {
     position: relative;
     text-align: center;
-    bottom: 15vw;
+    bottom: 20vh;
     font-size: 2.5rem;
 }
 
@@ -63,6 +63,8 @@ h2, h3 {
     height: 100vh;
     gap: 20px;
     text-align: center;
+    position: relative;
+    top: 10vh;
 }
 
 #first-reason {
