@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Галерея мобильного фотографа Зарины Назаровой.">
+    <title>Галерея - Профессиональный фотограф Караганда</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" id="logo">
+                        <img src="Images/icon-logo.svg" alt="Логотип Зарина Назарова" class="logo">
+                        <h1 id="name">Мобилограф<br>Зарина<br>Назарова</h1>
+                    </a>
+                </li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="price.html">Прайс</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="album">
+            <div class="image-container"><img alt="Фотография девочки с собакой" class="photos" onclick="openon" Modal(this)" src="Images/Gallery/girlwithdog.jpeg"><i class="fas fa-expand icon"onclick="openModal(this.previousElementSibling)"></i></img></div>
+            <div class="image-container"><img alt="Фотография женщины на железной дороге" class="photos" onclick="openModal(this)" src="Images/Gallery/womanontherailway.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография женщины на пляже" class="photos" onclick="openModal(this)" src="Images/Gallery/womanonthebeach.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девушки у автомобиля" class="photos" onclick="openModal(this)" src="Images/Gallery/girlbythecar.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="" class="photos" onclick="openModal(this)" src="Images/Gallery/girlbythecar2.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девушки с мандарином" class="photos" onclick="openModal(this)" src="Images/Gallery/girlwithtangerine.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография женщины, обнимающей сына" class="photos" onclick="openModal(this)" src="Images/Gallery/motherhugsson.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девочки с букетом цветов" class="photos" onclick="openModal(this)" src="Images/Gallery/girlwithabouquetofflowers.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девушки со шляпой" class="photos" onclick="openModal(this)" src="Images/Gallery/girlwithahat.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девушки с собакой" class="photos" onclick="openModal(this)" src="Images/Gallery/girlwithdog2.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография семьи, читающей сказку" class="photos" onclick="openModal(this)" src="Images/Gallery/familyreadingafairytale.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+            <div class="image-container"><img alt="Фотография девушки на прогулке" class="photos" onclick="openModal(this)" src="Images/Gallery/walkinggirl.jpeg"/><i class="fas fa-expand icon" onclick="openModal(this.previousElementSibling)"></i></div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-background" onclick="closeModal()"></div>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content-container">
+                <img class="modal-content" id="modalImg">
+                <div class="arrow left" id="prevButton" onclick="changeImage(-1)">&#10094;</div>
+                <div class="arrow right" id="nextButton" onclick="changeImage(1)">&#10095;</div>
+            </div>        
+            <div class="thumbnail-container">
+                <img src="Images/Gallery/girlwithdog.jpeg" alt="Фотография девочки с собакой" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/womanontherailway.jpeg" alt="Фотография женщины на железной дороге" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/womanonthebeach.jpeg" alt="Фотография женщины на пляже" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlbythecar.jpeg" alt="Фотография девушки у автомобиля" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlbythecar2.jpeg" alt="" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlwithtangerine.jpeg" alt="Фотография девушки с мандарином" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/motherhugsson.jpeg" alt="Фотография женщины, обнимающей сына" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlwithabouquetofflowers.jpeg" alt="Фотография девочки с букетом цветов" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlwithahat.jpeg" alt="Фотография девушки со шляпой" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/girlwithdog2.jpeg" alt="Фотография девушки с собакой" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/familyreadingafairytale.jpeg" alt="Фотография семьи, читающей сказку" class="thumbnail" onclick="openModal(this)">
+                <img src="Images/Gallery/walkinggirl.jpeg" alt="Фотография девушки на прогулке" class="thumbnail" onclick="openModal(this)">
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <ul class="social">
+            <li><a aria-label='Chat on WhatsApp' href='https://wa.me/+77071913520' target="_blank"><img src="Images/whatsapp.svg" alt="" id="whatsapp"></a></li>
+            <li><a aria-label='Instagram' href='https://www.instagram.com/nnazarrova.zari/?igsh=aGlvcDAwaHd1anhp' target="_blank"><img src="Images/instagram.svg" alt="instagram" id="instagram"></a></li>
+            <li><a aria-label="Telegram" href="https://t.me/ZarinaNazarova" target="_blank"><img src="Images/telegram.svg" alt="telegram" id="telegram"></a></li>
+        </ul>
+    </footer>
+    <script src="JavaScript/gallery.js"></script>
+</body>
+
+</html>

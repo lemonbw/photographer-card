@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    user-select: none;
+}
+
+.navbar {
+    position: relative;
+    padding: 15px 0px 10px 0px;
+    width: 100%;
+    background: white;
+    height: auto;
+    z-index: 2;
+}
+
+#logo {
+    display: contents;
+}
+
+.logo {
+    position: absolute;
+    height: 62px;
+    width: auto;
+    bottom: 14px;
+    left: 19px;
+}
+
+#name {
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+    font-size: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    font-size: 2.19rem;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social a img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s; 
+}
+
+.social a:hover img {
+    transform: scale(1.1); 
+}
+
+#instagram {
+    position: relative;
+    width: 48px;
+    top: -4%;
+}
+
+#telegram {
+    position: relative;
+    top: 4%;
+    width: 41px;
+}

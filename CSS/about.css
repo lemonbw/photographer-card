@@ -1,0 +1,274 @@
+h2, h3 {
+    font-weight: 200;
+}
+
+#icon-logo {
+    max-height: 80px;
+    width: auto;
+}
+
+.welcome {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px;
+    height: 178vh;
+    margin-top: -35vh;
+}
+
+#welcome-text {
+    flex: 1;
+    font-size: 1.56rem;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#photo {
+    flex: 1;
+    object-fit: cover;
+    max-width: 45%;
+    height: auto;
+}
+
+#question {
+    position: relative;
+    text-align: center;
+    bottom: 15vw;
+    font-size: 2.5rem;
+}
+
+.reason-headers {
+    font-size: 2rem;
+    height: 3rem;
+}
+
+.reason-pharagraphs {
+    font-size: 1.4rem;
+}
+
+.icons {
+    position: relative;
+    height: 15vh;
+    width: auto;
+}
+
+.reasons {
+    display: grid;
+    grid-template-areas: 
+        "left-top right-top"
+        "left-bottom right-bottom";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    gap: 20px;
+    text-align: center;
+}
+
+#first-reason {
+    grid-area: left-top;
+}
+
+#second-reason {
+    grid-area: right-top;
+}
+
+#third-reason {
+    grid-area: left-bottom;
+}
+
+#fourth-reason {
+    grid-area: right-bottom;
+}
+
+.reason-list {
+    padding: 20px;
+    margin-top: -23vh;
+}
+
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: -18vh;
+}
+
+#second-photo {
+    flex: 1;
+    object-fit: cover;
+    max-width: 45%;
+    height: auto;
+}
+
+#final-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#meet {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#call {
+    height: 15vh;
+}
+
+#call-text {
+    font-size: 1.4rem;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #question {
+        font-size: 2rem;
+    }
+
+    .reason-headers {
+        font-size: 1.5rem;
+    }
+
+    .reason-pharagraphs {
+        font-size: 1.2rem;
+    }
+
+    .reasons {
+        grid-template-areas: 
+            "left-top"
+            "right-top"
+            "left-bottom"
+            "right-bottom";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .final {
+        flex-direction: column;
+    }
+
+    #second-photo {
+        max-width: 100%;
+    }
+
+    #final-text {
+        padding-right: 0;
+    }
+
+    .social a img {
+        width: 30px;
+    }
+}
+/* Адаптация для планшетов (ширина от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #photo {
+        max-width: 60%;
+    }
+
+    #question {
+        font-size: 2rem;
+    }
+
+    .reason-headers {
+        font-size: 1.8rem;
+    }
+
+    .reason-pharagraphs {
+        font-size: 1.2rem;
+    }
+
+    .final {
+        flex-direction: column;
+        margin-top: -10vh;
+    }
+}
+
+/* Адаптация для экранов с соотношением 16:9 */
+@media (min-aspect-ratio: 16/9) {
+    .welcome {
+        height: 90vh;
+    }
+
+    #photo {
+        max-width: 50%;
+    }
+
+    .reasons {
+        height: 80vh;
+    }
+}
+
+/* Адаптация для мобильных устройств (ширина меньше 768px) */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #photo {
+        max-width: 100%;
+    }
+
+    #question {
+        font-size: 1.8rem;
+    }
+
+    .reason-headers {
+        font-size: 1.5rem;
+    }
+
+    .reason-pharagraphs {
+        font-size: 1.1rem;
+    }
+
+    .reasons {
+        grid-template-areas: 
+            "left-top"
+            "right-top"
+            "left-bottom"
+            "right-bottom";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .final {
+        flex-direction: column;
+    }
+
+    #second-photo {
+        max-width: 100%;
+    }
+
+    .social a img {
+        width: 30px;
+    }
+}

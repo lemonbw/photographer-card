@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Отзывы на фотографа Зарину НАзарову">
+    <title>Отзывы - Профессиональный фотограф Караганда</title>
+    <link rel="stylesheet" href="CSS/reviews.css">
+    <link rel="stylesheet" href="CSS/general.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" id="logo">
+                        <img src="Images/icon-logo.svg" alt="Логотип Зарина Назарова" class="logo">
+                        <h1 id="name">Мобилограф<br>Зарина<br>Назарова</h1>
+                    </a>
+                </li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="price.html">Прайс</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="main-reviews">
+            <div class="text-slider">
+                <div class="arrow prev" onclick="moveToPrevReview()">&#10094;</div>
+                <div class="reviews"></div>
+                <div class="arrow next" onclick="moveToNextReview()">&#10095;</div>
+            </div>
+            <div class="media-slider">
+                <div class="media-arrow prev" onclick="moveToPrevPhoto()">&#10094;</div>
+                <div class="photos"></div>
+                <div class="media-arrow next" onclick="moveToNextPhoto()">&#10095;</div>
+            </div>            
+         </section>    
+        <section id="reviews-from-social">
+            <div id="social-review-text"><p>Я ценю мнения своих клиентов! В этом разделе собраны отзывы из социальных сетей, где клиенты делятся своими впечатлениями о предоставленных услугах. Узнайте, что говорит каждый из них о моем сервисе и как я помог им достичь желаемых результатов!</p></div>
+            <span class="scroll-arrow" id="scrollArrow">←</span>
+            <div class="social-reviews" id="socialReviews">
+                <img src="Images/Reviews/Social/first-review.jpeg" alt="Первый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/second-review.jpeg" alt="Второй отзыв" class="social-review">
+                <img src="Images/Reviews/Social/fourth-review.jpeg" alt="Четвёртый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/fifth-review.jpeg" alt="Пятый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/sixth-review.jpeg" alt="Шестой отзыв" class="social-review">
+                <img src="Images/Reviews/Social/eight-review.jpeg" alt="Восьмой отзыв" class="social-review">
+                <img src="Images/Reviews/Social/ninth-review.jpeg" alt="Девятый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/tenth-review.jpeg" alt="Десятый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/eleventh-review.jpeg" alt="Одиннадцатый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/twelfth-review.jpeg" alt="Двенадцатый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/thirteenth-review.jpeg" alt="Тринадцатый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/fourteenth-review.jpeg" alt="Четырнадцатый отзыв" class="social-review">
+                <img src="Images/Reviews/Social/sixteenth-review.jpeg" alt="Шеснадцатый отзыв" class="social-review">
+            </div>
+        </section>  
+    </main>
+    <footer>
+        <ul class="social">
+            <li><a aria-label='Chat on WhatsApp' href='https://wa.me/+77071913520' target="_blank"><img src="Images/whatsapp.svg" alt="" id="whatsapp"></a></li>
+            <li><a aria-label='Instagram' href='https://www.instagram.com/nnazarrova.zari/?igsh=aGlvcDAwaHd1anhp' target="_blank"><img src="Images/instagram.svg" alt="instagram" id="instagram"></a></li>
+            <li><a aria-label="Telegram" href="https://t.me/ZarinaNazarova" target="_blank"><img src="Images/telegram.svg" alt="telegram" id="telegram"></a></li>
+        </ul>
+    </footer>
+    <script src="JavaScript/reviews.js"></script>
+</body>
+</html>
