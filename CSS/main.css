@@ -175,5 +175,6 @@
 @media (max-width: 768px) {
     .main, .second, .navigation {
         width: 129vw;
+        margin-left: 20vw;
     }
 }
