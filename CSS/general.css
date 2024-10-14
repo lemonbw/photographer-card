@@ -137,13 +137,13 @@ footer {
 }
 
 .hamburger div {
-    width: 55px;
-    height: 14px;
+    width: 60px;
+    height: 12px;
     background-color: black;
-    margin: 3px 0;
+    margin: 8px 0;
     transition: 0.4s;
     position: relative;
-    right: -83vw;
+    right: -81vw;
     bottom: 6px;
 }
 
@@ -156,10 +156,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    
-    html, body {
-        overflow-x: hidden;
-    }
     
     .navbar{
         margin-top: -60px;
@@ -228,7 +224,7 @@ footer {
 }
 
 .hamburger.is-active div:nth-child(1) {
-    transform: rotate(-45deg) translate(-18px, 6px);
+    transform: rotate(-45deg) translate(-22px, 6px);
 }
 
 .hamburger.is-active div:nth-child(2) {
@@ -236,5 +232,5 @@ footer {
 }
 
 .hamburger.is-active div:nth-child(3) {
-    transform: rotate(45deg) translate(-18px, -6px);
+    transform: rotate(45deg) translate(-22px, -6px);
 }

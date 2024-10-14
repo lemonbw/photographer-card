@@ -196,6 +196,11 @@
 }
 
 @media (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
     .intro-title, .description {
         width: 80vw;
         font-size: 1.6rem;

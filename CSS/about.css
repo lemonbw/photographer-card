@@ -134,143 +134,176 @@ h2, h3 {
     transform: translateX(0);
 }
 
-@media (max-width: 768px) {
-    .welcome {
-        flex-direction: column;
-        height: auto;
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: -15vh 0 5vh 0;
+    display: none;
+    left: 5%;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em; /* Размер стрелок */
+    color: #333; /* Цвет стрелок */
+    cursor: pointer;
+    user-select: none; /* Запрет выделения текста */
+    z-index: 10; /* Убедитесь, что стрелки находятся поверх слайдов */
+
+}
+
+.prev {
+    left: -5px; /* Положение стрелки "Назад" */
+}
+
+.next {
+    right: -5px; /* Положение стрелки "Вперед" */
+}
+
+.prev:hover, .next:hover {
+    color: #007bff; /* Цвет при наведении */
+}
+
+@media (max-width: 768px){
+
+    .hidden {
+        opacity: 1;
+        transform: translateX(0px);
     }
 
+    .icons {
+        width: 80px; /* Установите нужный размер */
+    }
+    
+    .reason-headers {
+        font-size: 2rem;
+    }
+    
+    .individual-approach {
+        margin-bottom: 30px; /* Увеличьте отступ снизу только для этого заголовка */
+    }
+    
+
+    .reason-paragraphs {
+        font-size: 1.5rem;
+    }
+    
+    .reasons {
+        display: none;
+    }
+
+    .slider {
+        display: block;
+    }
+    #icon-logo {
+        max-height: 50px;
+    }
+    
+    .welcome {
+        height: 100vh;
+        margin-top: -25vh;
+    }
+    
+    #welcome-text {
+        font-size: 1.2rem;
+        position: relative;
+        left: 10vw;
+        top: 2.5vh;
+        z-index: 2;
+    }
+
+    #welcome-text::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -10px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.753);
+        border-radius: 15px;
+        z-index: -1;
+        height: 110%;
+        width: 100%;
+    }
+    
     #photo {
+        position: relative;
         max-width: 100%;
-        height: auto;
+        top: 2vh;
+        right: 75vw;
+        border: 6px solid rgba(128, 128, 128, 0.603);
+        border-radius: 15px;
     }
 
     #question {
-        font-size: 2rem;
+        position: relative;
+      /* left: 15%;   */
+        bottom: 15vh;
+        font-size: 2.3rem;
     }
-
-    .reason-headers {
-        font-size: 1.5rem;
-    }
-
-    .reason-pharagraphs {
-        font-size: 1.2rem;
-    }
-
-    .reasons {
-        grid-template-areas: 
-            "left-top"
-            "right-top"
-            "left-bottom"
-            "right-bottom";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-
-    .final {
-        flex-direction: column;
-    }
-
-    #second-photo {
-        max-width: 100%;
-    }
-
     #final-text {
-        padding-right: 0;
+        padding-right: 20px;
     }
-
-    .social a img {
-        width: 30px;
+    
+    #meet {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
-}
-/* Адаптация для планшетов (ширина от 768px до 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .welcome {
-        flex-direction: column;
-        height: auto;
+    
+    #call {
+        height: 7vh;
+        z-index: 3;
+        position: relative;
+        left: 25vw;
+        top: 0vh
     }
-
-    #photo {
-        max-width: 60%;
-    }
-
-    #question {
-        font-size: 2rem;
-    }
-
-    .reason-headers {
-        font-size: 1.8rem;
-    }
-
-    .reason-pharagraphs {
+    #call-text {
         font-size: 1.2rem;
+        position: relative;
+        left: 25vw;
+        top: 0vh;
+        z-index: 2;
     }
 
-    .final {
-        flex-direction: column;
-        margin-top: -10vh;
+    #call-text::before {
+        content: '';
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.753);
+        border-radius: 15px;
+        z-index: -1;
+        height: 140%;
+        width: 110%;
     }
-}
-
-/* Адаптация для экранов с соотношением 16:9 */
-@media (min-aspect-ratio: 16/9) {
-    .welcome {
-        height: 90vh;
-    }
-
-    #photo {
-        max-width: 50%;
-    }
-
-    .reasons {
-        height: 80vh;
-    }
-}
-
-/* Адаптация для мобильных устройств (ширина меньше 768px) */
-@media (max-width: 768px) {
-    .welcome {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #photo {
-        max-width: 100%;
-    }
-
-    #question {
-        font-size: 1.8rem;
-    }
-
-    .reason-headers {
-        font-size: 1.5rem;
-    }
-
-    .reason-pharagraphs {
-        font-size: 1.1rem;
-    }
-
-    .reasons {
-        grid-template-areas: 
-            "left-top"
-            "right-top"
-            "left-bottom"
-            "right-bottom";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-
-    .final {
-        flex-direction: column;
-    }
-
+    
     #second-photo {
+        position: relative;
         max-width: 100%;
+        top: 2vh;
+        right: 43.5vw;
+        border: 6px solid rgba(128, 128, 128, 0.603);
+        border-radius: 15px;
     }
 
-    .social a img {
-        width: 30px;
+    #meet {
+        display: none;
     }
 }

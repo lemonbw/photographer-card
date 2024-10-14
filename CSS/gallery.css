@@ -87,7 +87,7 @@ main {
     position: relative;
     width: 80%;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10vh;
 }
 
 .modal-content.show {
@@ -152,4 +152,48 @@ main {
     font-size: 5rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        min-height: 670px;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .photos {
+        max-width: 130px;
+    }
+    .album {
+        left: 48.15%;
+    }
+    .modal-content {
+        max-width: 90%; /* Уменьшите ширину для мобильных */
+        max-height: 80vh; /* Ограничьте высоту */
+    }
+
+    .arrow {
+        font-size: 2rem; /* Уменьшите размер стрелок */
+        padding: 15% 5%; /* Уменьшите отступы */
+        color: gold;
+    }
+
+    .thumbnail-container {
+        margin-top: 5px; /* Уменьшите отступ */
+        margin-left: 1px;
+    }
+
+    .thumbnail {
+        height: 39px; /* Уменьшите размер миниатюр */
+        margin: 0 1px;
+    }
+
+    .close {
+        top: 5px; /* Уменьшите отступы */
+        right: 20px; /* Уменьшите отступы */
+        font-size: 4rem; /* Уменьшите размер шрифта */
+    }
 }

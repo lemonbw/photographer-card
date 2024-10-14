@@ -230,7 +230,38 @@ scrollArrow.addEventListener('click', function() {
     // Переворот и перемещение стрелки
     this.style.transform = isExpanded ? 'translateX(-50vw) rotate(180deg)' : 'translateX(0) rotate(0deg)';
 });
+for (let review of reviews) {
+    review.addEventListener('click', function() {
+        isExpanded = !isExpanded;
 
+        // Проверяем ширину экрана
+        const isSmallScreen = window.innerWidth <= 768; // Ширина экрана меньше или равна 768px
+
+        // Изменяем ширину в зависимости от размера экрана
+        if (isSmallScreen) {
+            socialReviews.style.width = isExpanded ? '100vw' : '50vw'; // Пример для маленьких экранов
+            for (let review of reviews) {
+                review.style.marginRight = isExpanded ? '20px' : '-100px'; // Увеличиваем или возвращаем расстояние
+            }
+        } else {
+            socialReviews.style.width = isExpanded ? '79vw' : '31.4vw'; // Пример для больших экранов
+            for (let review of reviews) {
+                review.style.marginRight = isExpanded ? '20px' : '-180px'; // Увеличиваем или возвращаем расстояние
+            }
+        }
+
+        // Остальная логика
+        socialReviews.style.overflowX = isExpanded ? 'auto' : 'hidden';
+        socialReviews.style.transform = isExpanded ? 'translateX(-50vw)' : 'translateX(0)';
+        textElement.style.opacity = isExpanded ? '0' : '1';
+        textElement.style.transform = isExpanded ? 'translateX(-30vw)' : 'translateX(0)';
+        
+        // Прокрутка
+        socialReviews.scrollBy({
+            behavior: 'smooth'
+        });
+    });
+}
 scrollArrow.addEventListener('mouseover', function() {
     this.style.textShadow = '-1px -1px 2px rgba(0, 0, 0, 0.9), 1px -1px 2px rgba(0, 0, 0, 0.9), -1px 1px 2px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 0.9)';
 });
