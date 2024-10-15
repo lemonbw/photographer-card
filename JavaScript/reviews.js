@@ -255,7 +255,7 @@ for (let review of reviews) {
         socialReviews.style.transform = isExpanded ? 'translateX(-50vw)' : 'translateX(0)';
         textElement.style.opacity = isExpanded ? '0' : '1';
         textElement.style.transform = isExpanded ? 'translateX(-30vw)' : 'translateX(0)';
-        
+        scrollArrow.style.transform = isExpanded ? 'translateX(-50vw) rotate(180deg)' : 'translateX(0) rotate(0deg)';
         // Прокрутка
         socialReviews.scrollBy({
             behavior: 'smooth'
