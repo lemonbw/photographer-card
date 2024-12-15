@@ -42,7 +42,7 @@ img {
     padding: 15px 0px 10px 0px;
     width: 100%;
     background: white;
-    height: auto;
+    height: 115;
     z-index: 2;
     margin-top: -22px;
 }
@@ -52,18 +52,19 @@ img {
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     height: 62px;
     width: auto;
-    bottom: 14px;
-    left: 19px;
+    left: -25px;
+    bottom: 3px;
 }
 
 #name {
     position: relative;
-    bottom: 5px;
+    bottom: 76px;
     left: 40px;
     font-size: 1rem;
+    margin-bottom: -71px;
 }
 
 .nav-links {
@@ -156,13 +157,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    
+  
     .navbar{
         margin-top: -60px;
     }
     .logo {
         margin-left: -2vw;
         top: 9.5vh;
+        position: absolute;
+        left: 19px;
     }
     
     #name {
@@ -170,6 +173,8 @@ footer {
         font-size: 17px;
         left: 80px;
         font-weight: 900;
+        position: relative;
+        font-size: 1rem;
     }
 
     .nav-links {
