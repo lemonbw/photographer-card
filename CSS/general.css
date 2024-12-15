@@ -88,7 +88,7 @@ img {
 }
 
 .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 footer {
@@ -226,6 +226,11 @@ footer {
     #logo-mobile {
         display: inline-block;
     }
+
+    .nav-links a {
+        padding: 0;
+    }
+
 }
 
 .hamburger.is-active div:nth-child(1) {
