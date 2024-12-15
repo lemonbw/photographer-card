@@ -164,6 +164,8 @@ footer {
     .logo {
         margin-left: -2vw;
         top: 9.5vh;
+        position: absolute;
+        left: 19px;
     }
     
     #name {
@@ -171,6 +173,8 @@ footer {
         font-size: 17px;
         left: 80px;
         font-weight: 900;
+        position: relative;
+        font-size: 1rem;
     }
 
     .nav-links {
