@@ -1,4 +1,25 @@
 const hiddenElements = document.querySelectorAll('.hidden');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+prevButton.addEventListener('mousedown', function() {
+    prevButton.classList.add('active');
+});
+prevButton.addEventListener('mouseup', function() {
+    setTimeout(() => {
+        prevButton.classList.remove('active');
+    }, 100); // Удаляет класс через 100 мс
+});
+
+nextButton.addEventListener('mousedown', function() {
+    nextButton.classList.add('active');
+});
+nextButton.addEventListener('mouseup', function() {
+    setTimeout(() => {
+        nextButton.classList.remove('active');
+    }, 100); // Удаляет класс через 100 мс
+});
+
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
