@@ -182,7 +182,7 @@ footer {
         flex-direction: column;
         background: white;
         position: absolute;
-        top: 20vh; /* Располагаем ниже хедера */
+        top: 19.5vh; /* Располагаем ниже хедера */
         left: 0;
         width: 100%;
         z-index: 1;
