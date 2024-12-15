@@ -157,7 +157,7 @@ h2, h3 {
 
 .arrow {
     position: absolute;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     font-size: 2em; /* Размер стрелок */
     color: #333; /* Цвет стрелок */
@@ -168,11 +168,11 @@ h2, h3 {
 }
 
 .prev {
-    left: -5px; /* Положение стрелки "Назад" */
+    left: 0px; /* Положение стрелки "Назад" */
 }
 
 .next {
-    right: -5px; /* Положение стрелки "Вперед" */
+    right: 0px; /* Положение стрелки "Вперед" */
 }
 
 .prev:hover, .next:hover {
@@ -306,5 +306,10 @@ h2, h3 {
 
     #meet {
         display: none;
+    }
+    
+    .final {
+        position: relative;
+        margin-top: -40px;
     }
 }
