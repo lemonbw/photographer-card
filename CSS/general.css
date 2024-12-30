@@ -1,246 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-html{
-    font-size: 16px;
-    overflow-x: hidden;
+html {
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 img {
-    user-select: none;
+  user-select: none;
 }
 
 .navbar {
-    position: relative;
-    padding: 15px 0px 10px 0px;
-    width: 100%;
-    background: white;
-    height: 115;
-    z-index: 2;
-    margin-top: -22px;
+  position: relative;
+  padding: 15px 0px 10px 0px;
+  width: 100%;
+  background: white;
+  height: 115;
+  z-index: 2;
+  margin-top: -22px;
 }
 
 #logo {
-    display: contents;
+  display: contents;
 }
 
 .logo {
-    position: relative;
-    height: 62px;
-    width: auto;
-    left: -25px;
-    bottom: 3px;
+  position: relative;
+  height: 62px;
+  width: auto;
+  left: -25px;
+  bottom: 3px;
 }
 
 #name {
-    position: relative;
-    bottom: 74.67px;
-    left: 40px;
-    font-size: 1rem;
-    margin-bottom: -71px;
+  position: relative;
+  bottom: 74.67px;
+  left: 40px;
+  font-size: 1rem;
+  margin-bottom: -71px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    height: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
 }
 
 .nav-links li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .nav-links a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s ease;
-    border-radius: 5px;
-    font-size: 2.19rem;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  font-size: 2.19rem;
 }
 
 .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
-    position: relative;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 .social {
-    list-style: none;
-    padding: 0;
-    display: flex; 
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .social li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .social a img {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s; 
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 .social a:hover img {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #instagram {
-    position: relative;
-    width: 48px;
-    top: -4%;
+  position: relative;
+  width: 48px;
+  top: -4%;
 }
 
 #telegram {
-    position: relative;
-    top: 4%;
-    width: 41px;
+  position: relative;
+  top: 4%;
+  width: 41px;
 }
 
 /* Стили для мобильного меню */
 .hamburger {
-    display: none; /* Скрываем гамбургер на десктопе */
-    flex-direction: column;
-    cursor: pointer;
+  display: none; /* Скрываем гамбургер на десктопе */
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .hamburger div {
-    width: 60px;
-    height: 12px;
-    background-color: black;
-    margin: 8px 0;
-    transition: 0.4s;
-    position: relative;
-    right: -81vw;
-    bottom: 6px;
+  width: 60px;
+  height: 12px;
+  background-color: black;
+  margin: 8px 0;
+  transition: 0.4s;
+  position: relative;
+  right: -81vw;
+  bottom: 6px;
 }
 
 .nav-links {
-    display: flex; /* По умолчанию на десктопе */
+  display: flex; /* По умолчанию на десктопе */
 }
 
 #logo-mobile {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-  
-    .navbar{
-        margin-top: -60px;
-    }
-    .logo {
-        margin-left: -2vw;
-        top: 9.5vh;
-        position: absolute;
-        left: 19px;
-    }
-    
-    #name {
-        top: 7vh;
-        font-size: 17px;
-        left: 80px;
-        font-weight: 900;
-        position: relative;
-        font-size: 1rem;
-    }
+  .navbar {
+    margin-top: -60px;
+  }
+  .logo {
+    margin-left: -2vw;
+    top: 9.5vh;
+    position: absolute;
+    left: 19px;
+  }
 
-    .nav-links {
-        display: flex; /* Временно показываем для настройки */
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 19.5vh; /* Располагаем ниже хедера */
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        opacity: 0; /* Начальное состояние: скрыто */
-        visibility: hidden; /* Изменяем видимость */
-        transform: translateY(-20px); /* Сдвинуть вверх для эффекта всплытия */
-        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; /* Плавный переход */
-    }
+  #name {
+    top: 7vh;
+    font-size: 17px;
+    left: 80px;
+    font-weight: 900;
+    position: relative;
+    font-size: 1rem;
+  }
 
-    .nav-links.active {
-        opacity: 1; /* Устанавливаем видимость */
-        visibility: visible; /* Делаем видимым */
-        transform: translateY(0); /* Возвращаем на место для эффекта всплытия */
-    }
+  .nav-links {
+    display: flex; /* Временно показываем для настройки */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 19.5vh; /* Располагаем ниже хедера */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0; /* Начальное состояние: скрыто */
+    visibility: hidden; /* Изменяем видимость */
+    transform: translateY(-20px); /* Сдвинуть вверх для эффекта всплытия */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; /* Плавный переход */
+  }
 
-    .hamburger {
-        display: inline; /* Показываем гамбургер на мобильных устройствах */
-    }
+  .nav-links.active {
+    opacity: 1; /* Устанавливаем видимость */
+    visibility: visible; /* Делаем видимым */
+    transform: translateY(0); /* Возвращаем на место для эффекта всплытия */
+  }
 
-    /* Затемнение фона при открытом меню */
-    body.active {
-        overflow: hidden; /* Отключаем прокрутку */
-    }
+  .hamburger {
+    display: inline; /* Показываем гамбургер на мобильных устройствах */
+  }
 
-    body.active::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Затемнение фона */
-        z-index: 0; /* Подменю */
-        transition: background 0.3s ease; /* Плавный переход */
-    }
+  /* Затемнение фона при открытом меню */
+  body.active {
+    overflow: hidden; /* Отключаем прокрутку */
+  }
 
-    #logo {
-        display: none;
-    }
+  body.active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    z-index: 0; /* Подменю */
+    transition: background 0.3s ease; /* Плавный переход */
+  }
 
-    #logo-mobile {
-        display: inline-block;
-    }
+  #logo {
+    display: none;
+  }
 
-    .nav-links a {
-        padding: 0;
-    }
+  #logo-mobile {
+    display: inline-block;
+  }
 
+  .nav-links a {
+    padding: 0;
+  }
 }
 
 .hamburger.is-active div:nth-child(1) {
-    transform: rotate(-45deg) translate(-22px, 6px);
+  transform: rotate(-45deg) translate(-22px, 6px);
 }
 
 .hamburger.is-active div:nth-child(2) {
-    opacity: 0; /* Скрываем среднюю линию */
+  opacity: 0; /* Скрываем среднюю линию */
 }
 
 .hamburger.is-active div:nth-child(3) {
-    transform: rotate(45deg) translate(-22px, -6px);
+  transform: rotate(45deg) translate(-22px, -6px);
 }

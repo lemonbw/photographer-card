@@ -1,199 +1,197 @@
 main {
-    flex-grow: 1;
-    min-height: 2380px;
+  flex-grow: 1;
+  min-height: 2380px;
 }
 
 .album {
-    left:50%;
-	transform:translateX(-50%);
-    display: grid;
-    position: absolute;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0px 20px 0px 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 20px 0px 40px;
 }
 
 .image-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .photos {
-    border: 5px solid white;
-    margin: -2px;
-    max-width: 450px;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  border: 5px solid white;
+  margin: -2px;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .photos:hover {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 .icon {
-    font-size: 3.75rem;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 3.75rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .image-container:hover .icon {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image-container:hover .photos {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
-
 .icon:hover {
-    transform: translate(-50%, -50%) scale(1.3);
-    transition: transform 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.3);
+  transition: transform 0.3s ease;
 }
 
 .modal {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .modal.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    max-height: 80vh;
-    width: auto;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
+  margin: auto;
+  display: block;
+  max-height: 80vh;
+  width: auto;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .modal-content-container {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    margin-top: 10vh;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 10vh;
 }
 
 .modal-content.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-    color: gray;
-    cursor: pointer;
-    user-select: none;
-    padding: 25% 10% 25% 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: gray;
+  cursor: pointer;
+  user-select: none;
+  padding: 25% 10% 25% 10%;
 }
 
 .arrow.left {
-    left: 10px;
+  left: 10px;
 }
 
 .arrow.right {
-    right: 10px;
+  right: 10px;
 }
 
 .thumbnail-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .thumbnail {
-    height: 120px;
-    width: auto;
-    margin: 0 5px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: transform 0.5s ease, opacity 0.3s ease, border-color 0.3s ease;
-    opacity: 0.5;
+  height: 120px;
+  width: auto;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.5s ease, opacity 0.3s ease, border-color 0.3s ease;
+  opacity: 0.5;
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .active-thumbnail {
-    transform: scale(1.1) !important;
-    opacity: 1 !important;
-    border: 2px solid gray !important;
+  transform: scale(1.1) !important;
+  opacity: 1 !important;
+  border: 2px solid gray !important;
 }
 
 #modalImg.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 40px;
-    color: gray;
-    font-size: 5rem;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  color: gray;
+  font-size: 5rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
+  main {
+    min-height: 670px;
+  }
 
-    main {
-        min-height: 670px;
-    }
+  .icon {
+    font-size: 2rem;
+  }
 
-    .icon {
-        font-size: 2rem;
-    }
+  .photos {
+    max-width: 130px;
+  }
+  .album {
+    left: 48.15%;
+  }
+  .modal-content {
+    max-width: 90%; /* Уменьшите ширину для мобильных */
+    max-height: 80vh; /* Ограничьте высоту */
+  }
 
-    .photos {
-        max-width: 130px;
-    }
-    .album {
-        left: 48.15%;
-    }
-    .modal-content {
-        max-width: 90%; /* Уменьшите ширину для мобильных */
-        max-height: 80vh; /* Ограничьте высоту */
-    }
+  .arrow {
+    font-size: 2rem; /* Уменьшите размер стрелок */
+    padding: 15% 5%; /* Уменьшите отступы */
+    color: gold;
+  }
 
-    .arrow {
-        font-size: 2rem; /* Уменьшите размер стрелок */
-        padding: 15% 5%; /* Уменьшите отступы */
-        color: gold;
-    }
+  .thumbnail-container {
+    margin-top: 5px; /* Уменьшите отступ */
+    margin-left: 1px;
+  }
 
-    .thumbnail-container {
-        margin-top: 5px; /* Уменьшите отступ */
-        margin-left: 1px;
-    }
+  .thumbnail {
+    height: 39px; /* Уменьшите размер миниатюр */
+    margin: 0 1px;
+  }
 
-    .thumbnail {
-        height: 39px; /* Уменьшите размер миниатюр */
-        margin: 0 1px;
-    }
-
-    .close {
-        top: 5px; /* Уменьшите отступы */
-        right: 20px; /* Уменьшите отступы */
-        font-size: 4rem; /* Уменьшите размер шрифта */
-    }
+  .close {
+    top: 5px; /* Уменьшите отступы */
+    right: 20px; /* Уменьшите отступы */
+    font-size: 4rem; /* Уменьшите размер шрифта */
+  }
 }

@@ -1,321 +1,320 @@
-h2, h3 {
-    font-weight: 200;
+h2,
+h3 {
+  font-weight: 200;
 }
 
 #icon-logo {
-    max-height: 80px;
-    width: auto;
+  max-height: 80px;
+  width: auto;
 }
 
 .welcome {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    padding: 20px;
-    height: 178vh;
-    margin-top: -35vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 20px;
+  height: 178vh;
+  margin-top: -35vh;
 }
 
 #welcome-text {
-    flex: 1;
-    font-size: 1.56rem;
-    padding-right: 20px;
-    text-align: center;
+  flex: 1;
+  font-size: 1.56rem;
+  padding-right: 20px;
+  text-align: center;
 }
 
 #photo {
-    flex: 1;
-    object-fit: cover;
-    max-width: 45%;
-    height: auto;
+  flex: 1;
+  object-fit: cover;
+  max-width: 45%;
+  height: auto;
 }
 
 #question {
-    position: relative;
-    text-align: center;
-    bottom: 20vh;
-    font-size: 2.5rem;
+  position: relative;
+  text-align: center;
+  bottom: 20vh;
+  font-size: 2.5rem;
 }
 
 .reason-headers {
-    font-size: 2rem;
-    height: 3rem;
+  font-size: 2rem;
+  height: 3rem;
 }
 
 .reason-pharagraphs {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .icons {
-    position: relative;
-    height: 15vh;
-    width: auto;
+  position: relative;
+  height: 15vh;
+  width: auto;
 }
 
 .reasons {
-    display: grid;
-    grid-template-areas: 
-        "left-top right-top"
-        "left-bottom right-bottom";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100vh;
-    gap: 20px;
-    text-align: center;
-    position: relative;
-    top: 10vh;
+  display: grid;
+  grid-template-areas:
+    "left-top right-top"
+    "left-bottom right-bottom";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  top: 10vh;
 }
 
 #first-reason {
-    grid-area: left-top;
+  grid-area: left-top;
 }
 
 #second-reason {
-    grid-area: right-top;
+  grid-area: right-top;
 }
 
 #third-reason {
-    grid-area: left-bottom;
+  grid-area: left-bottom;
 }
 
 #fourth-reason {
-    grid-area: right-bottom;
+  grid-area: right-bottom;
 }
 
 .reason-list {
-    padding: 20px;
-    margin-top: -23vh;
+  padding: 20px;
+  margin-top: -23vh;
 }
 
 .final {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    padding: 20px;
-    margin-top: -12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 20px;
+  margin-top: -12vh;
 }
 
 #second-photo {
-    flex: 1;
-    object-fit: cover;
-    max-width: 45%;
-    height: auto;
+  flex: 1;
+  object-fit: cover;
+  max-width: 45%;
+  height: auto;
 }
 
 #final-text {
-    flex: 1;
-    padding-right: 20px;
-    text-align: center;
+  flex: 1;
+  padding-right: 20px;
+  text-align: center;
 }
 
 #meet {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 #call {
-    height: 15vh;
+  height: 15vh;
 }
 
 #call-text {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: all 0.6s ease-out;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease-out;
 }
 
 .visible {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
-
 .slider {
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    margin: -15vh 0 5vh 0;
-    display: none;
-    left: 5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin: -15vh 0 5vh 0;
+  display: none;
+  left: 5%;
 }
 
 .slides-container {
-    display: flex;
-    transition: transform 0.5s ease;
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .arrow {
-    position: absolute;
-    top: 10%;
-    transform: translateY(-50%);
-    font-size: 2em; /* Размер стрелок */
-    color: #333; /* Цвет стрелок */
-    cursor: pointer;
-    user-select: none; /* Запрет выделения текста */
-    z-index: 10; /* Убедитесь, что стрелки находятся поверх слайдов */
-
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  font-size: 2em; /* Размер стрелок */
+  color: #333; /* Цвет стрелок */
+  cursor: pointer;
+  user-select: none; /* Запрет выделения текста */
+  z-index: 10; /* Убедитесь, что стрелки находятся поверх слайдов */
 }
 
 .prev {
-    left: 0px; /* Положение стрелки "Назад" */
+  left: 0px; /* Положение стрелки "Назад" */
 }
 
 .next {
-    right: 0px; /* Положение стрелки "Вперед" */
+  right: 0px; /* Положение стрелки "Вперед" */
 }
 
-.prev, .next {
-    color: black;
-    transition: color 0.2s ease, transform 0.1s ease; /* Плавный переход для цвета и размера */
+.prev,
+.next {
+  color: black;
+  transition: color 0.2s ease, transform 0.1s ease; /* Плавный переход для цвета и размера */
 }
 
-.prev:active, .next:active {
-    color: #007bff; /* Цвет при нажатии */
-    transform: translateY(-50%) scale(1.1); /* Увеличение размера на 10% */
+.prev:active,
+.next:active {
+  color: #007bff; /* Цвет при нажатии */
+  transform: translateY(-50%) scale(1.1); /* Увеличение размера на 10% */
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+  .hidden {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
-    .hidden {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  .icons {
+    width: 80px; /* Установите нужный размер */
+  }
 
-    .icons {
-        width: 80px; /* Установите нужный размер */
-    }
-    
-    .reason-headers {
-        font-size: 2rem;
-    }
-    
-    .individual-approach {
-        margin-bottom: 30px; /* Увеличьте отступ снизу только для этого заголовка */
-    }
-    
+  .reason-headers {
+    font-size: 2rem;
+  }
 
-    .reason-paragraphs {
-        font-size: 1.5rem;
-    }
-    
-    .reasons {
-        display: none;
-    }
+  .individual-approach {
+    margin-bottom: 30px; /* Увеличьте отступ снизу только для этого заголовка */
+  }
 
-    .slider {
-        display: block;
-    }
-    #icon-logo {
-        max-height: 50px;
-    }
-    
-    .welcome {
-        height: 100vh;
-        margin-top: -20vh;
-    }
-    
-    #welcome-text {
-        font-size: 1.2rem;
-        position: relative;
-        left: 10vw;
-        top: 2.5vh;
-        z-index: 1;
-    }
+  .reason-paragraphs {
+    font-size: 1.5rem;
+  }
 
-    #welcome-text::before {
-        content: '';
-        position: absolute;
-        top: -15px;
-        left: -10px;
-        right: 0px;
-        bottom: 0px;
-        background-color: rgba(255, 255, 255, 0.753);
-        border-radius: 15px;
-        z-index: -1;
-        height: 110%;
-        width: 100%;
-    }
-    
-    #photo {
-        position: relative;
-        max-width: 100%;
-        top: 2vh;
-        right: 75vw;
-        border: 6px solid rgba(128, 128, 128, 0.603);
-        border-radius: 15px;
-    }
+  .reasons {
+    display: none;
+  }
 
-    #question {
-        position: relative;
-      /* left: 15%;   */
-        bottom: 15vh;
-        font-size: 2.3rem;
-    }
-    #final-text {
-        padding-right: 20px;
-    }
-    
-    #meet {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
-    
-    #call {
-        height: 7vh;
-        z-index: 3;
-        position: relative;
-        left: 20.5vw;
-        top: 0vh
-    }
-    #call-text {
-        font-size: 1.2rem;
-        position: relative;
-        left: 20.5vw;
-        top: 0vh;
-        z-index: 2;
-        width: 50vw
-    }
+  .slider {
+    display: block;
+  }
+  #icon-logo {
+    max-height: 50px;
+  }
 
-    #call-text::before {
-        content: '';
-        position: absolute;
-        top: -70px;
-        left: -10px;
-        right: 0px;
-        bottom: 0px;
-        background-color: rgba(255, 255, 255, 0.753);
-        border-radius: 15px;
-        z-index: -1;
-        height: 140%;
-        width: 110%;
-    }
-    
-    #second-photo {
-        position: relative;
-        max-width: 100%;
-        top: 2vh;
-        right: 55vw;
-        border: 6px solid rgba(128, 128, 128, 0.603);
-        border-radius: 15px;
-    }
+  .welcome {
+    height: 100vh;
+    margin-top: -20vh;
+  }
 
-    #meet {
-        display: none;
-    }
-    
-    .final {
-        position: relative;
-        margin-top: -40px;
-    }
+  #welcome-text {
+    font-size: 1.2rem;
+    position: relative;
+    left: 10vw;
+    top: 2.5vh;
+    z-index: 1;
+  }
+
+  #welcome-text::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 15px;
+    z-index: -1;
+    height: 110%;
+    width: 100%;
+  }
+
+  #photo {
+    position: relative;
+    max-width: 100%;
+    top: 2vh;
+    right: 75vw;
+    border: 6px solid rgba(128, 128, 128, 0.603);
+    border-radius: 15px;
+  }
+
+  #question {
+    position: relative;
+    /* left: 15%;   */
+    bottom: 15vh;
+    font-size: 2.3rem;
+  }
+  #final-text {
+    padding-right: 20px;
+  }
+
+  #meet {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  #call {
+    height: 7vh;
+    z-index: 3;
+    position: relative;
+    left: 20.5vw;
+    top: 0vh;
+  }
+  #call-text {
+    font-size: 1.2rem;
+    position: relative;
+    left: 20.5vw;
+    top: 0vh;
+    z-index: 2;
+    width: 50vw;
+  }
+
+  #call-text::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -10px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 15px;
+    z-index: -1;
+    height: 140%;
+    width: 110%;
+  }
+
+  #second-photo {
+    position: relative;
+    max-width: 100%;
+    top: 2vh;
+    right: 55vw;
+    border: 6px solid rgba(128, 128, 128, 0.603);
+    border-radius: 15px;
+  }
+
+  #meet {
+    display: none;
+  }
+
+  .final {
+    position: relative;
+    margin-top: -40px;
+  }
 }
