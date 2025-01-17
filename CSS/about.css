@@ -193,15 +193,11 @@ h3 {
   }
 
   .icons {
-    width: 80px; /* Установите нужный размер */
+    width: 80px;
   }
 
   .reason-headers {
     font-size: 2rem;
-  }
-
-  .individual-approach {
-    margin-bottom: 30px; /* Увеличьте отступ снизу только для этого заголовка */
   }
 
   .reason-paragraphs {
@@ -316,5 +312,17 @@ h3 {
   .final {
     position: relative;
     margin-top: -40px;
+  }
+}
+
+@media (max-width: 386px) {
+  .fourth-header {
+    margin-bottom: 4vh;
+  }
+}
+
+@media (max-width: 415px) {
+  .individual-approach {
+    margin-bottom: 4vh;
   }
 }

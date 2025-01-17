@@ -22,10 +22,7 @@ nextButton.addEventListener("mouseup", function () {
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
-  return (
-    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.bottom >= 0
-  );
+  return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.bottom >= 0;
 }
 
 function onScroll() {
@@ -93,6 +90,10 @@ function loadSlides(type) {
     // Добавление специального класса только для "Индивидуального подхода"
     if (slide.title === "Индивидуальный подход") {
       headerElement.classList.add("individual-approach"); // Добавляем класс
+    }
+
+    if (slide.title === "Широкий спектр услуг") {
+      headerElement.classList.add("fourth-header");
     }
 
     headerElement.textContent = slide.title; // Устанавливаем текст заголовка
