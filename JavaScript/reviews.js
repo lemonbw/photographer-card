@@ -239,7 +239,16 @@ function loadReviews() {
   newReviews.forEach((review, index) => {
     const reviewElement = document.createElement("div");
     reviewElement.classList.add("review");
-    reviewElement.innerHTML = `<p>${review.text}</p><p class="author">— ${review.author}</p>`;
+    const textElement = document.createElement("p");
+    textElement.textContent = review.text;
+
+    const authorElement = document.createElement("p");
+    authorElement.classList.add("author");
+    authorElement.textContent = `— ${review.author}`;
+
+    reviewElement.appendChild(textElement);
+    reviewElement.appendChild(authorElement);
+
     reviewsContainer.appendChild(reviewElement);
 
     if (index === currentIndex) {
